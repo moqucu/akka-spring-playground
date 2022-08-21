@@ -61,6 +61,7 @@ class AppTest {
 
     @Test
     public void givenAnActor_whenTheMessageIsNull_respondWithException() {
+
         final TestKit probe = new TestKit(system);
         ActorRef wordCounterActorRef = probe.childActorOf(Props.create(WordCounterActor.class));
 
